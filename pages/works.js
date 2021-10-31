@@ -22,9 +22,13 @@ const Works = () => {
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
-            <Heading as="h3" fontSize={20} mb={4}>
-                Collaborations
-            </Heading>
+
+            <Section delay={0.2}>
+                <Divider my={6} />
+                <Heading as="h3" fontSize={20} mb={4}>
+                    Collaborations
+                </Heading>
+            </Section>
             <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section>
                     <WorkGridItem id="codebug" title="Codebug" thumbnail={thumbCodebug}>
@@ -37,9 +41,13 @@ const Works = () => {
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
-            <Heading as="h3" fontSize={20} mb={4}>
-                Old Projects
-            </Heading>
+
+            <Section delay={0.4}>
+                <Divider my={6} />
+                <Heading as="h3" fontSize={20} mb={4}>
+                    Old Projects
+                </Heading>
+            </Section>
             <SimpleGrid columns={[1,1,2]} gap={6}>
                 <Section>
                     <WorkGridItem id="codebug" title="Codebug" thumbnail={thumbCodebug}>
