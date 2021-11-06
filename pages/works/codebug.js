@@ -30,8 +30,31 @@ const Work = () => {
                         <span> Technology, Coding </span> 
                     </ListItem>
                 </List>
-
                 <WorkImage src="/images/works/Codebug.jpg" alt="Codebug" />
+
+                <Title>
+                    YotaBearingsAndHubs <Badge>2016</Badge>
+                </Title>
+                <P>
+                    An eCommerce website created for a small family business on Wix CMS. Drives sales organically and via social media platforms
+                </P>
+                <List ml={4} my={4}>
+                    <ListItem>
+                        <Meta> Website </Meta>
+                        <Link href="https://www.yotabearingsandhubs.com/">
+                            https://www.yotabearingsandhubs.com/ <ExternalLinkIcon mx="2px" />
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Meta> Technologies </Meta>
+                        <span> Wix CSM </span>
+                    </ListItem>
+                    <ListItem>
+                        <Meta> Topic </Meta>
+                        <span> Technology, eCommerce </span> 
+                    </ListItem>
+                </List>
+                <WorkImage src="/images/works/yota.jpg" alt="Yota Bearings and Hubs" />
             </Container>
         </Layout>
     )
