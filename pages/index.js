@@ -1,10 +1,12 @@
 import NextLink from 'next/link'
-import { Button, Container, Box, Heading, useColorModeValue } from '@chakra-ui/react'
+import { Link, Container, Heading, Box, Image, SimpleGrid, Button, List, ListItem, Icon, useColorModeValue } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-item'
+import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
     return (
@@ -53,6 +55,44 @@ const Page = () => {
                         <BioYear> 2020 to present</BioYear>
                         Work at WebFX.
                     </BioSection>
+                </Section>
+
+                <Section delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                    On the web
+                    </Heading>
+                    <List>
+                    <ListItem>
+                        <Link href="https://github.com/DavidReider" target="_blank">
+                        <Button
+                            variant="ghost"
+                            colorScheme="teal"
+                            leftIcon={<Icon as={IoLogoGithub} />}
+                        >
+                            @DavidReider
+                        </Button>
+                        </Link>
+                    </ListItem>
+                    <ListItem>
+                        <Link href="https://twitter.com/Reider_DJ" target="_blank">
+                        <Button
+                            variant="ghost"
+                            colorScheme="teal"
+                            leftIcon={<Icon as={IoLogoTwitter} />}
+                        >
+                            @Reider_DJ
+                        </Button>
+                        </Link>
+                    </ListItem>
+                    </List>
+                    
+                    <Box align="center" my={4}>
+                    <NextLink href="/posts">
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                        Popular posts
+                        </Button>
+                    </NextLink>
+                    </Box>
                 </Section>
             </Container>
         </Layout>
