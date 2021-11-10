@@ -44,8 +44,12 @@ const Page = () => {
                         Born in Harrisburg, Pennsylvania.
                     </BioSection>
                     <BioSection>
+                        <BioYear> 2016 </BioYear>
+                        Graduated from East Pennsboro High School.
+                    </BioSection>
+                    <BioSection>
                         <BioYear> 2019 </BioYear>
-                        Worked at Penn State Applied Research Lab. 
+                        Worked at Penn State Applied Research Lab as a Software Engineer.
                     </BioSection>
                     <BioSection>
                         <BioYear> 2020 </BioYear>
@@ -53,7 +57,7 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear> 2020 to present</BioYear>
-                        Work at WebFX.
+                        Work at WebFX as a Web Developer.
                     </BioSection>
                 </Section>
 
